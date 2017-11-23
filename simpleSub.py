@@ -46,7 +46,7 @@ def submit_phase():
         for tar in range(10):
             sub_df = simSub(city_array[0][1],city_array[0][2],\
                             city_array[tar+1][1],city_array[tar+1][2],\
-                            tar+1,date+1)
+                            tar+1,date+6)
             sub_csv=pd.concat([sub_csv,sub_df],axis=0)
     sub_csv.target = sub_csv.target.astype(np.int32)
     sub_csv.date = sub_csv.date.astype(np.int32)
